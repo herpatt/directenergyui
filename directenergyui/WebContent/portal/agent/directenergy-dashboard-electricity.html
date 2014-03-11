@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Direct Energy</title>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
+
+
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header1.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/flexslider.css">       
+    <link rel="stylesheet" href="../css/jquery_002.css">
+    <link rel="stylesheet" href="../css/jquery.css"> 
+    <link rel="stylesheet" href="../css/settings.css" type="text/css" media="screen">
+    
+    
+    <link rel="stylesheet" href="../css/page_one.css">
+    <link rel="stylesheet" href="../css/page_pricing.css">
+    <link rel="stylesheet" href="../css/page_search.css">
+    
+    
+    <link rel="stylesheet" href="../css/orange.css" id="style_color">
+    <link rel="stylesheet" href="../css/header1-orange.css" id="style_color-header-1">
+    
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="boxed-layout container">
+    <!--=== Top ===-->    
+<div class="top">
+    <div class="container">         
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a>Languages</a>
+                <ul class="lenguages">
+                    <li class="active">
+                        <a href="#">English <i class="icon-ok"></i></a> 
+                    </li>
+                    <li><a href="#">Spanish</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">German</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>   
+            <li><a href="#">Help</a></li>  
+            <li class="devider"></li>   
+            <li><a href="#">Agent Login</a></li>   
+        </ul>
+    </div>      
+</div><!--/top-->
+<!--=== End Top ===-->    
+
+
+
+<!--=== Header ===-->    
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="margin-left: -15px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="logo-header" src="../images/deb-logo-white.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a href="#" onclick="gotoPage('home')" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Electricity
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="gotoPage('electricity')" href="#">View Product</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Natural Gas
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>              
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home Services
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>                                        
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Features
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="gotoPage('debt')" >View Debtor Details</a></li>
+                            <li><a href="#" onclick="gotoPage('enroll')" >Enroll Product</a></li>
+                            <li><a href="#">Features 1</a></li>
+                            <li><a href="#">Features 2</a></li>
+                            <li><a href="#">Features 3</a></li>
+                            <li><a href="#">Features 4</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Contacts
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Contacts Option 1</a></li>
+                            <li><a href="#">Contacts Option 2</a></li>
+                        </ul>
+                    </li>                    
+                    <li class="hidden-sm"><a class="search"><i class="icon-search search-btn"></i></a></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Search" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>                
+            </div><!-- /navbar-collapse -->
+        </div>    
+    </div>    
+</div><!--/header-->
+<!--=== End Header ===-->    
+
+    
+    
+    <div class="breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Electricity</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a onclick="gotoPage('home')" href="#">Home</a></li>
+            <li class="active">Electricity</li>
+        </ul>
+    </div>
+</div>
+
+
+<!--=== Slider ===-->
+<div style="overflow: visible;" class="fullwidthbanner-container">
+    <div style="height: 235px;" id="revslider-570" class="fullwidthbanner revslider-initialised tp-simpleresponsive">
+       
+        <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 235px;">
+            
+            <li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300" data-thumb="../images/thumb1.jpg" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1; position: absolute;">
+                <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                <div class="slotholder"><img src="../images/electicityServiceBanner.jpg" class="defaultimg" style="width: inherit;padding-left: inherit;width: 1168px; height: inherit; position: absolute; left: inherit; top: 0px; opacity: 1;"></div>
+                
+                <div class="caption very_big_white lfl stl tp-caption start" style="background-color: #e67e22;font-size: 33px; padding: 1px 4px 3px; margin: 0px; border-width: 0px; line-height: 36px; white-space: nowrap; min-width: 0px; min-height: 0px; -webkit-transform: scale(1, 1) rotate(0deg); opacity: 1; left: 40px; top: 86px; visibility: visible;">
+                     Get Electricity
+                </div>
+                                
+            </li>
+
+        </ul>            
+
+        <div style="width: 90.9663%; overflow: hidden;" class="tp-bannertimer tp-bottom"></div>
+    <div style="display: none;" class="tp-loader"></div></div>
+<div style="bottom: 20px; left: 50%; margin-left: -16px;" class="tp-bullets simplebullets round-old hidebullets"><div class="bullet first"></div><div class="bullet"></div><div class="bullet"></div><div class="bullet last selected"></div><div class="tpclear"></div></div><div style="position: absolute; top: 249px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default hidearrows"></div><div style="position: absolute; top: 249px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default hidearrows"></div>
+
+</div>
+
+
+<!--=== End Slider ===-->
+
+<br/>
+
+<div class="container"> 
+    
+    <!-- Service Blocks -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="headline">
+                <h2>List all Products</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+<div class="row margin-bottom-40">
+        <div class="col-md-4 col-sm-6">
+            <div class="pricing hover-effect">
+                <div class="pricing-head">
+                    <h3>Fixed price <span>Fixed Price Strategies for Electricity</span></h3>
+                    <h4><i>$</i>500<i>.00</i> <span>Per Month</span></h4>
+                </div>
+                <ul class="pricing-content list-unstyled">
+                    <li><i class="icon-tags"></i> Greater Budget Control</li>
+                    <li><i class="icon-asterisk"></i> Long-term Stability</li>
+                    <li><i class="icon-heart"></i> Competitive Pricing</li>
+                    <li><i class="icon-star"></i> Guidance For your Budgeting Approach</li>
+                </ul>
+                <div class="pricing-footer">
+                    <p>Gain budget by reducing exposure to market volatility</p>
+
+                    
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="pricing hover-effect">
+                <div class="pricing-head">
+                    <h3>Variable Price <span>Index Priced Strategies for Electricity</span></h3>
+                    <h4><i>$</i>800<i>.00</i> <span>Per Month</span></h4>
+                </div>
+                <ul class="pricing-content list-unstyled">
+                    <li><i class="icon-tags"></i> Greater Flexibility</li>
+                    <li><i class="icon-asterisk"></i> Streamlined Conversion</li>
+                    <li><i class="icon-heart"></i> Continual Market Monitoring</li>
+                    <li><i class="icon-star"></i> Competitive, Transparent Pricing</li>
+                </ul>
+                <div class="pricing-footer">
+                    <p>Capitalize on dips in the wholesale market</p>
+                    
+                </div>                    
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="pricing hover-effect">
+                <div class="pricing-head">
+                    <h3>Power Portfolio <span>Portfolio Strategies for Electricity</span></h3>
+                    <h4><i>$</i>1300<i>.99</i> <span>Per Month</span></h4>
+                </div>
+                <ul class="pricing-content list-unstyled">
+                    <li><i class="icon-tags"></i> Personal, Customized Support</li>
+                    <li><i class="icon-asterisk"></i> Transparent Pricing</li>
+                    <li><i class="icon-heart"></i> Constant Market Presence</li>
+                    <li><i class="icon-star"></i> Lower Annual Usage Offerings</li>
+                </ul>
+                <div class="pricing-footer">
+                    <p>Receive a customized, dynamic energy management strategy</p>
+
+                </div>                    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+        
+    
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Add New Product</h4>
+      </div>
+      <div class="modal-body">
+      
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10" style="display:none;" id="successmessage">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>  New Product Added Successfully !</strong>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>            
+            
+            
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10">
+            
+            <div class="panel panel-orange margin-bottom-40">
+                            
+                            
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Add New Product</strong></h3>
+                </div>
+                
+                
+                
+                <div class="panel-body">                                                      
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductId" placeholder="Product Id" style="width: 150px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductName" placeholder="Product Name" style="width: 300px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="startDate" placeholder="Start Date"  style="width: 150px;">
+                            </div>
+                        </div>        
+                        
+                       <div class="form-group">
+                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="endDate" placeholder="End Date" style="width: 150px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Commercial</option>
+                                    <option>Residential</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
+                            <div class="col-lg-10">
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>                       
+                                </ul>
+                            </div>
+                        </div>                        
+                                    
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Brand</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Local</option>
+                                    <option>Foreign</option>
+                                </select>
+                            </div>
+                        </div>                        
+                                    
+            
+                                    <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn-u btn-u-orange" onclick="$('#successmessage').show(); return false;">Save Product</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>        
+            </div>
+            
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myEditModalLabel">Edit Product</h4>
+      </div>
+      <div class="modal-body">
+      
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10" style="display:none;" id="editsuccessmessage">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>  Product Edited Successfully !</strong>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>            
+            
+            
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10">
+            
+            <div class="panel panel-orange margin-bottom-40">
+                            
+                            
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Edit Product</strong></h3>
+                </div>
+                
+                <div class="panel-body">                                                      
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductId" value="4144" placeholder="Product Id" style="width: 150px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductName" value="Name" placeholder="Product Name" style="width: 300px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="startDate" value="01/01/2014" placeholder="Start Date"  style="width: 150px;">
+                            </div>
+                        </div>        
+                        
+                       <div class="form-group">
+                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="endDate" value="01/01/2014" placeholder="End Date" style="width: 150px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Commercial</option>
+                                    <option>Residential</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
+                            <div class="col-lg-10">
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                                    
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Brand</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Local</option>
+                                    <option>Foreign</option>
+                                </select>
+                            </div>
+                        </div>                        
+                                    
+            
+                                    <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn-u btn-u-orange" onclick="$('#editsuccessmessage').show(); return false;">Save Product</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>        
+            </div>
+            
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
+     
+    <!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">                      
+                <p class="copyright-space">
+                     © 2014 Direct Energy Marketing Limited, a subsidiary of <a href="#" target="blank">Centrica plc</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <span style="float: right;"><a href="#">Privacy &amp; Legal</a> | <a href="#" target="_blank">Careers</a> | <a href="#">Site Map</a></span>
+            </div>
+        </div><!--/row-->
+    </div><!--/container--> 
+</div><!--/copyright--> 
+<!--=== End Copyright ===-->
+
+
+
+
+<div title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" id="topcontrol"><img src="../images/up.png" style="width:51px; height:42px"></div></body>
+    
+  
+  
+         
+    
+               
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../js/hover-dropdown.min.js"></script> 
+<script type="text/javascript" src="../js/back-to-top.js"></script>
+
+       
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script>
+           
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+<script type="text/javascript" src="../js/custom.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        //App.initSliders();
+        //App.initFancybox();
+        //App.initBxSlider();
+        //Index.initRevolutionSlider();                                
+    });
+</script>
+
+
+    
+</html>

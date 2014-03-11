@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Direct Energy</title>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header1.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/flexslider.css">       
+    <link rel="stylesheet" href="../css/jquery_002.css">
+    <link rel="stylesheet" href="../css/jquery.css"> 
+    <link rel="stylesheet" href="../css/settings.css" type="text/css" media="screen">
+    
+    
+    <link rel="stylesheet" href="../css/page_one.css">
+    <link rel="stylesheet" href="../css/page_pricing.css">
+    <link rel="stylesheet" href="../css/page_search.css">
+    
+    
+    <link rel="stylesheet" href="../css/orange.css" id="style_color">
+    <link rel="stylesheet" href="../css/header1-orange.css" id="style_color-header-1">
+    
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="boxed-layout container">
+    <!--=== Top ===-->    
+<div class="top">
+    <div class="container">         
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a>Languages</a>
+                <ul class="lenguages">
+                    <li class="active">
+                        <a href="#">English <i class="icon-ok"></i></a> 
+                    </li>
+                    <li><a href="#">Spanish</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">German</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>   
+            <li><a href="#">Help</a></li>  
+            <li class="devider"></li>   
+            <li><a href="#">Agent Login</a></li>   
+        </ul>
+    </div>      
+</div><!--/top-->
+<!--=== End Top ===-->    
+
+
+
+<!--=== Header ===-->    
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="margin-left: -15px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="logo-header" src="../images/deb-logo-white.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a href="#" onclick="gotoPage('home')" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Electricity
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="gotoPage('electricity')" href="#">View Product</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Natural Gas
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>              
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home Services
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>                                        
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Features
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="gotoPage('debt')" >View Debtor Details</a></li>
+                            <li><a href="#" onclick="gotoPage('enroll')" >Enroll Product</a></li>
+                            <li><a href="#">Features 1</a></li>
+                            <li><a href="#">Features 2</a></li>
+                            <li><a href="#">Features 3</a></li>
+                            <li><a href="#">Features 4</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Contacts
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Contacts Option 1</a></li>
+                            <li><a href="#">Contacts Option 2</a></li>
+                        </ul>
+                    </li>                    
+                    <li class="hidden-sm"><a class="search"><i class="icon-search search-btn"></i></a></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Search" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>                
+            </div><!-- /navbar-collapse -->
+        </div>    
+    </div>    
+</div><!--/header-->
+<!--=== End Header ===-->    
+
+        
+
+    <div class="breadcrumbs margin-bottom-40">
+        <div class="container">
+            <h1 class="pull-left">View Debtor Details</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a onclick="gotoPage('home')" href="#">Home</a></li>
+                <li ><a onclick="gotoPage('electricity')" href="#">Admin</a></li>
+                <li class="active">View Debtor Details</li>            
+            </ul>
+        </div>
+    </div>
+
+
+<div class="row">
+
+<div class="col-md-1">
+
+</div>
+
+<div class="col-md-10">
+
+<div class="panel panel-orange">
+                
+                
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="icon-tasks"></i> View Debtor Details</h3>
+    </div>
+    
+    
+    <div class="panel-body">                                                      
+        
+        <form class="form-inline" role="form">
+       
+            <div class="form-group btn-add-custom">
+                <label for="exampleInputEmail1">Account No</label>
+            </div>       
+            
+       
+            <div class="form-group  btn-add-custom">
+                <label class="sr-only" for="exampleInputEmail2">Account No</label>
+                <input type="text" class="form-control" id="accountNo" placeholder="Enter Account No">
+            </div>
+            
+            
+            <button type="submit" class="btn-u btn-u-default" onclick="$('.debt-result').show(); return false;">Display</button>
+        </form>        
+        
+    </div>
+</div>
+
+<div class="col-md-1">
+
+</div>
+
+</div>        
+</div>
+        
+
+<div class="row margin-bottom-10 debt-result">
+
+<div class="col-md-1">
+
+</div>
+
+<div class="col-md-10">
+            
+
+            <div>
+                <h4><strong>Filters</strong></h4>
+            </div>
+                    
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5><strong>Rating</strong></h5>
+                </div>
+                <div class="col-lg-3">
+                    <h5><strong>Start Date</strong></h5>
+                </div>
+                <div class="col-lg-3">
+                    <h5><strong>End Date</strong></h5>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+            
+            <div class="row">
+
+                <div class="col-lg-3">
+                   <ul class="list-unstyled search-rating">
+                       <li><i class="icon-star"></i></li>
+                       <li><i class="icon-star"></i></li>
+                       <li><i class="icon-star"></i></li>
+                       <li><i class="icon-star"></i></li>
+                       <li><i class="icon-star"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" class="form-control" placeholder="Start Date">
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" class="form-control" placeholder="End Date">
+                </div>
+                
+                <div class="col-lg-3">
+                    <button type="submit" class="btn-u btn-u-default">Filter</button>
+                </div>                
+                
+            </div>
+                        
+            
+        
+    </div>
+</div>
+
+<div class="col-md-1">
+
+</div>
+
+</div>
+
+
+
+<div class="row margin-bottom-40  debt-result">
+
+<div class="col-md-1">
+
+</div>
+
+<div class="col-md-10">
+
+<div class="panel panel-orange">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-header-custom">
+                            <th>#</th>
+                            <th>Premises</th>
+                            <th>Status</th>
+                            <th>Product Name</th>
+                            <th>Product Rating</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td><span class="label label-success">Current</span></td>   
+                            <td class="hidden-sm">Otto</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td><span class="label label-success">Current</span></td>    
+                            <td class="hidden-sm">Thornton</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td><span class="label label-info">Future</span></td>
+                            <td class="hidden-sm">the Bird</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>htmlstream</td>
+                            <td><span class="label label-info">Future</span></td>  
+                            <td class="hidden-sm">Web Design</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>                                   
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                      
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>htmlstream</td>
+                            <td><span class="label label-info">Future</span></td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>                                   
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                      
+                        </tr>
+                        
+                        <tr>
+                            <td>4</td>
+                            <td>htmlstream</td>
+                            <td><span class="label label-info">Future</span></td>
+                            <td class="hidden-sm">Web Design</td>
+                            <td>
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>                                   
+                                </ul>
+                            </td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                      
+                        </tr>
+                        
+                        
+                                                                                                                                                                                                
+                    </tbody>
+                </table>
+            </div>
+            
+                <div class="text-center marg-top-custom">
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>                                                            
+                </div>
+
+
+</div>
+
+<div class="col-md-1">
+
+</div>
+        
+</div>
+
+
+     
+    <!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">                      
+                <p class="copyright-space">
+                     © 2014 Direct Energy Marketing Limited, a subsidiary of <a href="#" target="blank">Centrica plc</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <span style="float: right;"><a href="#">Privacy &amp; Legal</a> | <a href="#" target="_blank">Careers</a> | <a href="#">Site Map</a></span>
+            </div>
+        </div><!--/row-->
+    </div><!--/container--> 
+</div><!--/copyright--> 
+<!--=== End Copyright ===-->
+
+
+
+
+<div title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" id="topcontrol"><img src="../images/up.png" style="width:51px; height:42px"></div></body>
+    
+  
+  
+         
+    
+               
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../js/hover-dropdown.min.js"></script> 
+<script type="text/javascript" src="../js/back-to-top.js"></script>
+
+       
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script>
+           
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+<script type="text/javascript" src="../js/custom.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        //App.initSliders();
+        //App.initFancybox();
+        //App.initBxSlider();
+        //Index.initRevolutionSlider();                                
+    });
+</script>
+
+
+</html>

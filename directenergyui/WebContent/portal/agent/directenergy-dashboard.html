@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Direct Energy</title>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header1.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/flexslider.css">       
+    <link rel="stylesheet" href="../css/jquery_002.css">
+    <link rel="stylesheet" href="../css/jquery.css"> 
+    <link rel="stylesheet" href="../css/settings.css" type="text/css" media="screen">
+    
+    
+    <link rel="stylesheet" href="../css/page_one.css">
+    <link rel="stylesheet" href="../css/page_pricing.css">
+    <link rel="stylesheet" href="../css/page_search.css">
+    
+    
+    <link rel="stylesheet" href="../css/orange.css" id="style_color">
+    <link rel="stylesheet" href="../css/header1-orange.css" id="style_color-header-1">
+    
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="boxed-layout container">
+    <!--=== Top ===-->    
+<div class="top">
+    <div class="container">         
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a>Languages</a>
+                <ul class="lenguages">
+                    <li class="active">
+                        <a href="#">English <i class="icon-ok"></i></a> 
+                    </li>
+                    <li><a href="#">Spanish</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">German</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>   
+            <li><a href="#">Help</a></li>  
+            <li class="devider"></li>   
+            <li><a href="#">Agent Login</a></li>   
+        </ul>
+    </div>      
+</div><!--/top-->
+<!--=== End Top ===-->    
+
+
+
+<!--=== Header ===-->    
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="margin-left: -15px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="logo-header" src="../images/deb-logo-white.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a href="#" onclick="gotoPage('home')" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Electricity
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="gotoPage('electricity')" href="#">View Product</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Natural Gas
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>              
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Home Services
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View Product</a></li>
+                        </ul>
+                    </li>                                        
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Features
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="gotoPage('debt')" >View Debtor Details</a></li>
+                            <li><a href="#" onclick="gotoPage('enroll')" >Enroll Product</a></li>
+                            <li><a href="#">Features 1</a></li>
+                            <li><a href="#">Features 2</a></li>
+                            <li><a href="#">Features 3</a></li>
+                            <li><a href="#">Features 4</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                            Contacts
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Contacts Option 1</a></li>
+                            <li><a href="#">Contacts Option 2</a></li>
+                        </ul>
+                    </li>                    
+                    <li class="hidden-sm"><a class="search"><i class="icon-search search-btn"></i></a></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Search" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>                
+            </div><!-- /navbar-collapse -->
+        </div>    
+    </div>    
+</div><!--/header-->
+<!--=== End Header ===-->    
+
+    
+    
+<!--=== Slider ===-->
+<div style="overflow: visible;" class="fullwidthbanner-container">
+    <div style="height: 235px;" id="revslider-570" class="fullwidthbanner revslider-initialised tp-simpleresponsive">
+       
+        <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 235px;">
+            
+            <li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300" data-thumb="../images/thumb1.jpg" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1; position: absolute;">
+                <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                <div class="slotholder"><img src="../images/61-LB-Banner.jpg" class="defaultimg img-responsive" style="width: inherit;padding-left: inherit;width: 1168px; height: inherit; position: absolute; left: inherit; top: 0px; opacity: 1;"></div>
+            </li>
+
+        </ul>            
+
+        <div style="width: 90.9663%; overflow: hidden;" class="tp-bannertimer tp-bottom"></div>
+    <div style="display: none;" class="tp-loader"></div></div>
+<div style="bottom: 20px; left: 50%; margin-left: -16px;" class="tp-bullets simplebullets round-old hidebullets"><div class="bullet first"></div><div class="bullet"></div><div class="bullet"></div><div class="bullet last selected"></div><div class="tpclear"></div></div><div style="position: absolute; top: 249px; margin-top: -20px; left: 20px;" class="tp-leftarrow tparrows default hidearrows"></div><div style="position: absolute; top: 249px; margin-top: -20px; right: 20px;" class="tp-rightarrow tparrows default hidearrows"></div>
+
+</div>
+<!--=== End Slider ===-->
+
+<!--=== Purchase Block ===-->
+<div class="purchase">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <span>ENERGY SAVINGS YOU CAN COUNT ON</span>
+                <p>As a small business owner, you are faced with daily challenges of running your business while staying on top of your energy bill. Many states have passed energy deregulation legislation that allows for far more choices, but also makes choosing an energy plan more complex. Direct Energy Business has developed specific plans and services that fit the unique needs of your growing company.</p>
+            </div>            
+        </div>
+    </div>
+</div><!--/row-->
+<!-- End Purchase Block -->
+
+<!--=== Content Part ===-->
+<div class="one-page">
+    <div class="one-page-inner  one-grey">
+        <div class="container">
+            <h1>Electricity</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>With more than 25 years of experience in supplying energy and related services, you can count on us to help make your business better. We offer:</p>
+                    
+                    <ul class="list-unstyled">
+                        <li><i class="icon-angle-right color-green"></i>Energy management solutions to control your energy costs</li>
+                        <li><i class="icon-angle-right color-green"></i>Innovative solutions to reduce your usage</li>
+                        <li><i class="icon-angle-right color-green"></i>Market intelligence to help you make informed decisions</li>
+                        <li><i class="icon-angle-right color-green"></i>Expertise to service your unique business needs</li>
+                    </ul>                    
+                    
+                    <a class="btn-u btn-u-large btn-u-green one-page-btn" onclick="gotoPage('electricity')"><i class="icon-bolt"></i> View Products</a>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="../images/img5.jpg" class="img-responsive margin-bottom-10" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="one-page-inner one-orange">
+        <div class="container">
+            <h1>Natural Gas</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/img1.jpg" class="margin-bottom-10 img-responsive" alt="">
+                </div>
+                
+                <div class="col-md-6">
+                    <p>We offer simple, competitively priced natural gas plans that are designed to fit the needs of all of our customers.</p>
+                    <h5 class="color-white"> 3 Year Super Flex Natural Gas Price Plan </h5>
+                    <ul class="list-unstyled">
+                        <li class="color-white"><i class="icon-angle-right color-white"></i>Flexible Natural Gas price with the security of a winter cap of $5.99/GJ</li>
+                        <li class="color-white"><i class="icon-angle-right color-white"></i>No Cancellation Fee</li>
+                        <li class="color-white"><i class="icon-angle-right color-white"></i>2,000 Aeroplan Miles*</li>
+                    </ul>       
+                    <p>This offer is only available to residents of Alberta who do not currently have a service contract with Direct Energy</p>
+                    <p>Aeroplan Miles will be credited to the Aeroplan Account approximately 120 days after commencement of Service from Direct Energy. AeroplanÂ® is a registered trademark of Aeroplan Canada Inc.</p>
+                    <a class="btn-u btn-u-large btn-u-blue one-page-btn"> <i class="icon-bolt"></i> View Products </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="one-page-inner one-grey">
+        <div class="container">
+            <h1>Home Services</h1>
+            <div class="row margin-bottom-40">
+                <div class="col-md-6">
+                    <p>As the primary home services provider across 46 US states, Direct Energy chooses only the best HVAC and plumbing businesses in the country for our home service customers in Chicago and across Illinois.</p>
+                    <p>You can make long-term and short-term repair and replacement expenses a thing of the past when you start service with Direct Energy and its home service affiliates today</p>
+                    <p>Our team reflects Direct Energy's dedication to outstanding home service, with informative customer assistance, expert technicians, and repairs made to last</p>                    
+                    <a class="btn-u btn-u-large btn-u-red one-page-btn"> <i class="icon-bolt"></i>View Products</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="../images/img7.jpg" class="img-responsive" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    
+ 
+</div>      
+    
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Add New Product</h4>
+      </div>
+      <div class="modal-body">
+      
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10" style="display:none;" id="successmessage">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>  New Product Added Successfully !</strong>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>            
+            
+            
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10">
+            
+            <div class="panel panel-orange margin-bottom-40">
+                            
+                            
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Add New Product</strong></h3>
+                </div>
+                
+                
+                
+                <div class="panel-body">                                                      
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductId" placeholder="Product Id" style="width: 150px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductName" placeholder="Product Name" style="width: 300px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="startDate" placeholder="Start Date"  style="width: 150px;">
+                            </div>
+                        </div>        
+                        
+                       <div class="form-group">
+                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="endDate" placeholder="End Date" style="width: 150px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Commercial</option>
+                                    <option>Residential</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
+                            <div class="col-lg-10">
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>                       
+                                </ul>
+                            </div>
+                        </div>                        
+                                    
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Brand</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Local</option>
+                                    <option>Foreign</option>
+                                </select>
+                            </div>
+                        </div>                        
+                                    
+            
+                                    <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn-u btn-u-orange" onclick="$('#successmessage').show(); return false;">Save Product</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>        
+            </div>
+            
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myEditModalLabel">Edit Product</h4>
+      </div>
+      <div class="modal-body">
+      
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10" style="display:none;" id="editsuccessmessage">
+                <div class="alert alert-success">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>  Product Edited Successfully !</strong>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>            
+            
+            
+            <div class="row">
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            <div class="col-md-10">
+            
+            <div class="panel panel-orange margin-bottom-40">
+                            
+                            
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Edit Product</strong></h3>
+                </div>
+                
+                <div class="panel-body">                                                      
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductId" value="4144" placeholder="Product Id" style="width: 150px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="ProductName" value="Name" placeholder="Product Name" style="width: 300px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="startDate" value="01/01/2014" placeholder="Start Date"  style="width: 150px;">
+                            </div>
+                        </div>        
+                        
+                       <div class="form-group">
+                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="endDate" value="01/01/2014" placeholder="End Date" style="width: 150px;">
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Commercial</option>
+                                    <option>Residential</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                       <div class="form-group">
+                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
+                            <div class="col-lg-10">
+                                <ul class="list-unstyled search-rating">
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                   <li><i class="icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                                    
+                       <div class="form-group">
+                            <label for="customer" class="col-lg-2 control-label">Brand</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" style="width: 150px;">
+                                    <option>Local</option>
+                                    <option>Foreign</option>
+                                </select>
+                            </div>
+                        </div>                        
+                                    
+            
+                                    <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn-u btn-u-orange" onclick="$('#editsuccessmessage').show(); return false;">Save Product</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-1">
+            
+            </div>
+            
+            </div>        
+            </div>
+            
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
+    <!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">                      
+                <p class="copyright-space">
+                     © 2014 Direct Energy Marketing Limited, a subsidiary of <a href="#" target="blank">Centrica plc</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <span style="float: right;"><a href="#">Privacy &amp; Legal</a> | <a href="#" target="_blank">Careers</a> | <a href="#">Site Map</a></span>
+            </div>
+        </div><!--/row-->
+    </div><!--/container--> 
+</div><!--/copyright--> 
+<!--=== End Copyright ===-->
+
+
+
+
+<div title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;" id="topcontrol"><img src="../images/up.png" style="width:51px; height:42px"></div></body>
+    
+  
+  
+         
+    
+               
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../js/hover-dropdown.min.js"></script> 
+<script type="text/javascript" src="../js/back-to-top.js"></script>
+
+       
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script>
+           
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+<script type="text/javascript" src="../js/custom.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        //App.initSliders();
+        //App.initFancybox();
+        //App.initBxSlider();
+        //Index.initRevolutionSlider();                                
+    });
+</script>
+
+
+</html>

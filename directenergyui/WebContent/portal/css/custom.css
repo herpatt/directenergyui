@@ -1,0 +1,109 @@
+.navbar-header {
+	height: 62px;
+	margin: auto;
+	background-color: #e67e22;
+	margin-left: -15px;
+}
+
+.header .navbar-brand {
+    padding: 15px 15px;
+}
+
+.navbar > .container .navbar-brand {
+    margin-left: 0px;
+}
+
+.copyright p.copyright-space {
+	margin-bottom: 0px;
+	font-size: 11px;
+    margin-top: auto;
+}
+
+.footer li {
+    color: #dadada;
+}
+
+
+.footer li a {
+    color: #dadada;
+    font-size: 12px;
+}
+
+
+.modal-backdrop.in {
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+
+
+.btn-add-custom {
+    margin-right: 15px;
+}
+
+ul.search-rating li {
+    display: inline;
+}
+
+ul.search-rating li i:hover {
+    color: #f8be2c;
+}
+
+ul.search-rating li i {
+	color: #f8be2c;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+
+.table-header-custom {
+	color: #fff;
+	background: #e67e22;
+}
+
+.marg-top-custom {
+    margin-top: -25px;
+}
+
+
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    margin-right: auto;
+}
+
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-content {
+    width: 700px;	
+}
+
+
+.debt-result{
+	display : none;
+}
+
+.pad-top-20{
+	padding-top: 20px;
+}
+
+.servive-block a{
+	color : white;
+}
+
+
+.servive-block .servive-block-in {
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.panel .table .btn-u {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+
+
+
