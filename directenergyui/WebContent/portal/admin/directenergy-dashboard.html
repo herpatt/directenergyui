@@ -271,6 +271,7 @@
  
 </div>      
     
+    
     <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -303,11 +304,9 @@
             
             <div class="row">
             
-            <div class="col-md-1">
             
-            </div>
             
-            <div class="col-md-10">
+            <div class="col-md-12">
             
             <div class="panel panel-orange margin-bottom-40">
                             
@@ -321,35 +320,35 @@
                 <div class="panel-body">                                                      
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
-                            <div class="col-lg-10">
+                            <label for="inputId" class="col-lg-3 control-label">Product Id</label>
+                            <div class="col-lg-9">
                                 <input type="text" class="form-control" id="ProductId" placeholder="Product Id" style="width: 150px;">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
-                            <div class="col-lg-10">
+                            <label for="inputName" class="col-lg-3 control-label">Product Name</label>
+                            <div class="col-lg-9">
                                 <input type="text" class="form-control" id="ProductName" placeholder="Product Name" style="width: 300px;">
                             </div>
                         </div>
                         
                        <div class="form-group">
-                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
-                            <div class="col-lg-10">
+                            <label for="startDate" class="col-lg-3 control-label">Start Date</label>
+                            <div class="col-lg-9">
                                 <input type="text" class="form-control" id="startDate" placeholder="Start Date"  style="width: 150px;">
                             </div>
                         </div>        
                         
                        <div class="form-group">
-                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
-                            <div class="col-lg-10">
+                            <label for="endDate" class="col-lg-3 control-label">End Date</label>
+                            <div class="col-lg-9">
                                 <input type="text" class="form-control" id="endDate" placeholder="End Date" style="width: 150px;">
                             </div>
                         </div>
                         
                        <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
-                            <div class="col-lg-10">
+                            <label for="customer" class="col-lg-3 control-label">Customer Type</label>
+                            <div class="col-lg-9">
                                 <select class="form-control" style="width: 150px;">
                                     <option>Commercial</option>
                                     <option>Residential</option>
@@ -358,24 +357,17 @@
                         </div>
                         
                        <div class="form-group">
-                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
-                            <div class="col-lg-10">
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>                       
-                                </ul>
+                            <label for="rank" class="col-lg-3 control-label">Ranking</label>
+                            <div class="col-lg-9">
+                                <span class="label label-success product-font">Premium</span>
+                                <span class="label label-info product-font">Medium</span>
+                                <span class="label label-warning product-font">Baselevel</span>
                             </div>
                         </div>                        
                                     
                        <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Brand</label>
-                            <div class="col-lg-10">
+                            <label for="customer" class="col-lg-3 control-label">Brand</label>
+                            <div class="col-lg-9">
                                 <select class="form-control" style="width: 150px;">
                                     <option>Local</option>
                                     <option>Foreign</option>
@@ -385,7 +377,7 @@
                                     
             
                                     <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
+                            <div class="col-lg-offset-3 col-lg-9">
                                 <button class="btn-u btn-u-orange" onclick="$('#successmessage').show(); return false;">Save Product</button>
                             </div>
                         </div>
@@ -393,9 +385,6 @@
                 </div>
             </div>
             
-            <div class="col-md-1">
-            
-            </div>
             
             </div>        
             </div>
@@ -409,136 +398,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myEditModalLabel">Edit Product</h4>
-      </div>
-      <div class="modal-body">
-      
-            <div class="row">
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            <div class="col-md-10" style="display:none;" id="editsuccessmessage">
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>  Product Edited Successfully !</strong>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            </div>            
-            
-            
-            <div class="row">
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            <div class="col-md-10">
-            
-            <div class="panel panel-orange margin-bottom-40">
-                            
-                            
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Edit Product</strong></h3>
-                </div>
-                
-                <div class="panel-body">                                                      
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductId" value="4144" placeholder="Product Id" style="width: 150px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductName" value="Name" placeholder="Product Name" style="width: 300px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="startDate" value="01/01/2014" placeholder="Start Date"  style="width: 150px;">
-                            </div>
-                        </div>        
-                        
-                       <div class="form-group">
-                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="endDate" value="01/01/2014" placeholder="End Date" style="width: 150px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Commercial</option>
-                                    <option>Residential</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
-                            <div class="col-lg-10">
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>                        
-                                    
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Brand</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Local</option>
-                                    <option>Foreign</option>
-                                </select>
-                            </div>
-                        </div>                        
-                                    
-            
-                                    <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn-u btn-u-orange" onclick="$('#editsuccessmessage').show(); return false;">Save Product</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            </div>        
-            </div>
-            
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
      
     <!--=== End Footer ===-->
 
