@@ -222,7 +222,7 @@
             <div class="pricing hover-effect">
                 <div class="pricing-head">
                     <h3>Fixed price <span>Fixed Price Strategies for Electricity</span></h3>
-                    <h4><i>$</i>500<i>.00</i> <span>Per Month</span></h4>
+                    <h4>25 <i> product </i><span> in this category</span></h4>
                 </div>
                 <ul class="pricing-content list-unstyled">
                     <li><i class="icon-tags"></i> Greater Budget Control</li>
@@ -231,9 +231,7 @@
                     <li><i class="icon-star"></i> Guidance For your Budgeting Approach</li>
                 </ul>
                 <div class="pricing-footer">
-                    <p>Gain budget by reducing exposure to market volatility</p>
-
-                    
+                    <p><span class="product-style" onclick="viewProductDetails()">Click for product details</span></p>
                 </div>                    
             </div>
         </div>
@@ -241,7 +239,7 @@
             <div class="pricing hover-effect">
                 <div class="pricing-head">
                     <h3>Variable Price <span>Index Priced Strategies for Electricity</span></h3>
-                    <h4><i>$</i>800<i>.00</i> <span>Per Month</span></h4>
+                    <h4>50 <i> product </i><span> in this category</span></h4>
                 </div>
                 <ul class="pricing-content list-unstyled">
                     <li><i class="icon-tags"></i> Greater Flexibility</li>
@@ -250,8 +248,7 @@
                     <li><i class="icon-star"></i> Competitive, Transparent Pricing</li>
                 </ul>
                 <div class="pricing-footer">
-                    <p>Capitalize on dips in the wholesale market</p>
-                    
+                    <p><span class="product-style" onclick="viewProductDetails()">Click for product details</span></p>
                 </div>                    
             </div>
         </div>
@@ -259,7 +256,7 @@
             <div class="pricing hover-effect">
                 <div class="pricing-head">
                     <h3>Power Portfolio <span>Portfolio Strategies for Electricity</span></h3>
-                    <h4><i>$</i>1300<i>.99</i> <span>Per Month</span></h4>
+                    <h4>45 <i> product </i><span> in this category</span></h4>
                 </div>
                 <ul class="pricing-content list-unstyled">
                     <li><i class="icon-tags"></i> Personal, Customized Support</li>
@@ -268,7 +265,7 @@
                     <li><i class="icon-star"></i> Lower Annual Usage Offerings</li>
                 </ul>
                 <div class="pricing-footer">
-                    <p>Receive a customized, dynamic energy management strategy</p>
+                    <p><span class="product-style" onclick="viewProductDetails()">Click for product details</span></p>
 
                 </div>                    
             </div>
@@ -276,265 +273,84 @@
     </div>
     
     
-    
-        
-    
-    <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myProductModal" tabindex="-1" role="dialog" aria-labelledby="myProductLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Add New Product</h4>
+        <h4 class="modal-title" id="myProductLabel">Product Details</h4>
       </div>
       <div class="modal-body">
-      
+            
+            
             <div class="row">
             
-            <div class="col-md-1">
+            <div class="col-md-12">
             
-            </div>
-            
-            <div class="col-md-10" style="display:none;" id="successmessage">
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>  New Product Added Successfully !</strong>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
-            
+<div class="panel panel-orange">
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr class="table-header-custom">
+                            <th>Product Category</th>
+                            <th>Product Name</th>
+                            <th>Tariff</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="label label-success product-font">Premium</span></td>
+                            <td>Thermostat</td>   
+                            <td class="hidden-sm">$ 500</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>
+                        </tr>
+                        <tr>
+                            <td><span class="label label-info product-font">Medium</span></td>
+                            <td>Heater</td>    
+                            <td class="hidden-sm">$ 300</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+                        <tr>
+                            <td><span class="label label-warning product-font">Baselevel</span></td>
+                            <td>Cooler</td>
+                            <td class="hidden-sm">$ 200</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+
+                        <tr>
+                            <td><span class="label label-success product-font">Premium</span></td>
+                            <td>Thermostat</td>   
+                            <td class="hidden-sm">$ 500</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>
+                        </tr>
+                        <tr>
+                            <td><span class="label label-info product-font">Medium</span></td>
+                            <td>Heater</td>    
+                            <td class="hidden-sm">$ 300</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+                        <tr>
+                            <td><span class="label label-warning product-font">Baselevel</span></td>
+                            <td>Cooler</td>
+                            <td class="hidden-sm">$ 200</td>
+                            <td>Mar 15 2014</td>
+                            <td>Mar 15 2014</td>                                                   
+                        </tr>
+
+                        
+                                                                                                                                                                                                
+                    </tbody>
+                </table>
+                
             </div>            
             
-            
-            <div class="row">
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            <div class="col-md-10">
-            
-            <div class="panel panel-orange margin-bottom-40">
-                            
-                            
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Add New Product</strong></h3>
-                </div>
-                
-                
-                
-                <div class="panel-body">                                                      
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductId" placeholder="Product Id" style="width: 150px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductName" placeholder="Product Name" style="width: 300px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="startDate" placeholder="Start Date"  style="width: 150px;">
-                            </div>
-                        </div>        
-                        
-                       <div class="form-group">
-                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="endDate" placeholder="End Date" style="width: 150px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Commercial</option>
-                                    <option>Residential</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
-                            <div class="col-lg-10">
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>                       
-                                </ul>
-                            </div>
-                        </div>                        
-                                    
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Brand</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Local</option>
-                                    <option>Foreign</option>
-                                </select>
-                            </div>
-                        </div>                        
-                                    
-            
-                                    <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn-u btn-u-orange" onclick="$('#successmessage').show(); return false;">Save Product</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            </div>        
-            </div>
-            
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myEditModalLabel">Edit Product</h4>
-      </div>
-      <div class="modal-body">
-      
-            <div class="row">
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            <div class="col-md-10" style="display:none;" id="editsuccessmessage">
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>  Product Edited Successfully !</strong>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            </div>            
-            
-            
-            <div class="row">
-            
-            <div class="col-md-1">
-            
-            </div>
-            
-            <div class="col-md-10">
-            
-            <div class="panel panel-orange margin-bottom-40">
-                            
-                            
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="icon-tasks"></i> <strong>Edit Product</strong></h3>
-                </div>
-                
-                <div class="panel-body">                                                      
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="inputId" class="col-lg-2 control-label">Product Id</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductId" value="4144" placeholder="Product Id" style="width: 150px;">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputName" class="col-lg-2 control-label">Product Name</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ProductName" value="Name" placeholder="Product Name" style="width: 300px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="startDate" class="col-lg-2 control-label">Start Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="startDate" value="01/01/2014" placeholder="Start Date"  style="width: 150px;">
-                            </div>
-                        </div>        
-                        
-                       <div class="form-group">
-                            <label for="endDate" class="col-lg-2 control-label">End Date</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="endDate" value="01/01/2014" placeholder="End Date" style="width: 150px;">
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Customer Type</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Commercial</option>
-                                    <option>Residential</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                       <div class="form-group">
-                            <label for="rank" class="col-lg-2 control-label">Ranking</label>
-                            <div class="col-lg-10">
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>                        
-                                    
-                       <div class="form-group">
-                            <label for="customer" class="col-lg-2 control-label">Brand</label>
-                            <div class="col-lg-10">
-                                <select class="form-control" style="width: 150px;">
-                                    <option>Local</option>
-                                    <option>Foreign</option>
-                                </select>
-                            </div>
-                        </div>                        
-                                    
-            
-                                    <div class="form-group">
-                            <div class="col-lg-offset-2 col-lg-10">
-                                <button class="btn-u btn-u-orange" onclick="$('#editsuccessmessage').show(); return false;">Save Product</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="col-md-1">
-            
-            </div>
             
             </div>        
             </div>
@@ -547,6 +363,10 @@
     </div>
   </div>
 </div>    
+        
+    
+    <!-- Modal -->
+
      
     <!--=== End Footer ===-->
 

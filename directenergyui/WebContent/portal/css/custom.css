@@ -78,10 +78,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
     overflow: auto;
 }
 
-.modal-content {
-    width: 700px;	
-}
-
 
 .debt-result{
 	display : none;
@@ -107,7 +103,19 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 
 
-.check {
-	
+.product-style {
+    cursor: pointer;
+    text-decoration: underline;	
 }
+
+
+.product-font {
+font-size: 12px;
+}
+
+
+.custom-breadcrumbs {
+    padding: 0px;
+}
+
 

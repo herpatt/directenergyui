@@ -163,9 +163,9 @@
 
         
 
-    <div class="breadcrumbs margin-bottom-40">
+    <div class="breadcrumbs custom-breadcrumbs  margin-bottom-10">
         <div class="container">
-            <h1 class="pull-left">View Debtor Details</h1>
+            <h1 class="pull-left"></h1>
             <ul class="pull-right breadcrumb">
                 <li><a onclick="gotoPage('home')" href="#">Home</a></li>
                 <li ><a onclick="gotoPage('electricity')" href="#">Admin</a></li>
@@ -191,23 +191,79 @@
     </div>
     
     
-    <div class="panel-body">                                                      
+    <div class="panel-body">         
+       
+        <form style="display:block" class="form-horizontal" role="form">
+
+            <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Search By</label>
+                <div class="col-lg-2">
+                    <select id="searchResultDrop" class="form-control input-sm" onchange="searchResult(this)">
+                         <option value="Account">By Account</option>
+                         <option value="Address">By Address</option>
+                    </select>  
+                </div>
+                
+                <div class="col-lg-8">
+                
+                </div>
+            </div>
+
+        </form>     
         
-        <form class="form-inline" role="form">
-       
-            <div class="form-group btn-add-custom">
-                <label for="exampleInputEmail1">Account No</label>
-            </div>       
-            
-       
-            <div class="form-group  btn-add-custom">
-                <label class="sr-only" for="exampleInputEmail2">Account No</label>
-                <input type="text" class="form-control" id="accountNo" placeholder="Enter Account No">
+        <form id="accountform" class="form-horizontal" role="form">
+
+            <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Account No</label>
+                <div class="col-lg-2">
+                    <input type="text" class="form-control" id="accountNo" placeholder="Account No">
+                </div>                
+                <div class="col-lg-8">
+                    <button type="submit" class="btn-u btn-u-default" onclick="$('.debt-result').show(); return false;">Display</button>
+                </div>
+            </div>
+
+        </form>               
+          
+        
+        <form  id="addressform" style="display:none" class="form-horizontal" role="form">
+    
+            <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Address Line 1</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="addressLine1" placeholder="Enter Address Line 1" style="width: 300px;">
+                </div>
             </div>
             
+            <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Address Line 2</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="addressLine1" placeholder="Enter Address Line 2" style="width: 300px;">
+                </div>
+            </div>
             
-            <button type="submit" class="btn-u btn-u-default" onclick="$('.debt-result').show(); return false;">Display</button>
-        </form>        
+            <div class="form-group">
+                <label for="inputName" class="col-lg-2 control-label">Zip Code</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="addressLine1" placeholder="Enter Zip Code" style="width: 300px;">
+                </div>
+            </div>            
+                        
+    
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn-u btn-u-default" onclick="$('.debt-result').show(); return false;">Display</button>
+                </div>
+            </div>
+        </form>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            
         
     </div>
 </div>
@@ -250,13 +306,9 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                   <ul class="list-unstyled search-rating">
-                       <li><i class="icon-star"></i></li>
-                       <li><i class="icon-star"></i></li>
-                       <li><i class="icon-star"></i></li>
-                       <li><i class="icon-star"></i></li>
-                       <li><i class="icon-star"></i></li>
-                    </ul>
+                   <span class="label label-success product-font">Premium</span>
+                   <span class="label label-info product-font">Medium</span>
+                   
                 </div>
                 <div class="col-lg-3">
                     <input type="text" class="form-control" placeholder="Start Date">
@@ -297,106 +349,72 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="table-header-custom">
-                            <th>#</th>
                             <th>Premises</th>
                             <th>Status</th>
                             <th>Product Name</th>
                             <th>Product Rating</th>
                             <th>Start Date</th>
                             <th>End Date</th>
+                            <th>Suggested Products</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Mark</td>
-                            <td><span class="label label-success">Current</span></td>   
-                            <td class="hidden-sm">Otto</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                </ul>
-                            </td>
+                            <td><span class="label label-danger product-font">Future</span></td>
+                            <td>Thermostat</td>   
+                            <td><span class="label label-success product-font">Premium</span></td>
+
                             <td>Mar 15 2014</td>
                             <td>Mar 15 2014</td>
+                            
+                            <td></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>Jacob</td>
-                            <td><span class="label label-success">Current</span></td>    
-                            <td class="hidden-sm">Thornton</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                </ul>
-                            </td>
+                            <td><span class="label label-danger product-font">Future</span></td>
+                            <td>Heater</td>    
+                            <td><span class="label label-success product-font">Premium</span></td>
                             <td>Mar 15 2014</td>
-                            <td>Mar 15 2014</td>                                                   
+                            <td>Mar 15 2014</td>
+                            <td></td>                                                   
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>Larry</td>
-                            <td><span class="label label-info">Future</span></td>
-                            <td class="hidden-sm">the Bird</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                </ul>
-                            </td>
+                            <td><span class="label label-warning product-font">Current</span></td>
+                            <td>Cooler</td>
+                            <td><span class="label label-info product-font">Medium</span></td>
                             <td>Mar 15 2014</td>
-                            <td>Mar 15 2014</td>                                                   
+                            <td>Mar 15 2014</td>    
+                            <td></td>                                               
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>htmlstream</td>
-                            <td><span class="label label-info">Future</span></td>  
-                            <td class="hidden-sm">Web Design</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>                                   
-                                </ul>
-                            </td>
+                            <td><span class="label label-warning product-font">Current</span></td>
+                            <td>Heater</td>  
+                            <td><span class="label label-info product-font">Medium</span></td>
                             <td>Mar 15 2014</td>
-                            <td>Mar 15 2014</td>                                                      
+                            <td>Mar 15 2014</td>
+                            <td></td>                                                      
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>htmlstream</td>
-                            <td><span class="label label-info">Future</span></td>
-                            <td class="hidden-sm">Web Design</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>                                   
-                                </ul>
-                            </td>
+                            <td><span class="label label-warning product-font">Current</span></td>
+                            <td>Cooler</td>
+                            <td><span class="label label-success product-font">Premium</span></td>
                             <td>Mar 15 2014</td>
-                            <td>Mar 15 2014</td>                                                      
+                            <td>Mar 15 2014</td>
+                            <td></td>                                                                                  
                         </tr>
                         
                         <tr>
                             <td>4</td>
-                            <td>htmlstream</td>
-                            <td><span class="label label-info">Future</span></td>
-                            <td class="hidden-sm">Web Design</td>
-                            <td>
-                                <ul class="list-unstyled search-rating">
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>
-                                   <li><i class="icon-star"></i></li>                                   
-                                </ul>
-                            </td>
+                            <td><span class="label label-danger product-font">Future</span></td>
+                            <td>Cooler</td>
+                            <td><span class="label label-success product-font">Premium</span></td>
                             <td>Mar 15 2014</td>
-                            <td>Mar 15 2014</td>                                                      
+                            <td>Mar 15 2014</td>     
+                            <td></td>                                                 
                         </tr>
                         
                         
@@ -428,24 +446,6 @@
 
 
      
-    <!--=== End Footer ===-->
-
-<!--=== Copyright ===-->
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">                      
-                <p class="copyright-space">
-                     © 2014 Direct Energy Marketing Limited, a subsidiary of <a href="#" target="blank">Centrica plc</a>
-                </p>
-            </div>
-            <div class="col-md-6">
-                <span style="float: right;"><a href="#">Privacy &amp; Legal</a> | <a href="#" target="_blank">Careers</a> | <a href="#">Site Map</a></span>
-            </div>
-        </div><!--/row-->
-    </div><!--/container--> 
-</div><!--/copyright--> 
-<!--=== End Copyright ===-->
 
 
 

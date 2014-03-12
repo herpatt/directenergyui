@@ -55,3 +55,33 @@ var deleteRow = function(obj){
 	$(obj.parentNode.parentNode).remove();
 };
 
+
+
+var viewProductDetails = function(){
+	
+	$('#myProductModal').modal('toggle');
+	
+};
+
+
+var searchResult = function(obj) {
+	
+	var selectedVal = $('#searchResultDrop').val();
+	
+	if( selectedVal == 'Address' ){
+		$('#addressform').show();
+		$('#accountform').hide();		
+	} else{
+		$('#addressform').hide();
+		$('#accountform').show();
+	}
+	
+};
+
+
+
+
+
+
+
+
