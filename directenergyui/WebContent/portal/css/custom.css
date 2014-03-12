@@ -1,3 +1,5 @@
+body { zoom: 90%; }
+
 .navbar-header {
 	height: 62px;
 	margin: auto;
@@ -105,5 +107,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 
 
-
+.check {
+	
+}
 
