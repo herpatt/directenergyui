@@ -1,2 +1,2 @@
-directenergyui
+directenergyui-test
 ==============
